@@ -7,11 +7,11 @@
 //
 
 #import "JTCInformationInputViewController.h"
-#import "NSStringAdditions.h"
 #import <extobjc.h>
 #import <SVProgressHUD/SVProgressHUD.h>
 #import <SECoreTextView/SETextView.h>
 #import <BlocksKit/BlocksKit+UIKit.h>
+#import <JTCCommon/JTCCommon.h>
 
 @interface JTCInformationInputViewController () <UITextViewDelegate,SETextViewDelegate>
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintBottom;

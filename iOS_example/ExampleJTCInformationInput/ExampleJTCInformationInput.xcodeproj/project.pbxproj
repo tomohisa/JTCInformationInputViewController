@@ -22,8 +22,10 @@
 		018635B0192449A9000E2176 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0186358F192449A8000E2176 /* UIKit.framework */; };
 		018635B8192449A9000E2176 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 018635B6192449A9000E2176 /* InfoPlist.strings */; };
 		018635BA192449A9000E2176 /* ExampleJTCInformationInputTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 018635B9192449A9000E2176 /* ExampleJTCInformationInputTests.m */; };
-		01AE257219244AD60019AE2A /* JTCInformationInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AE257019244AD60019AE2A /* JTCInformationInputViewController.m */; };
-		01AE257319244AD60019AE2A /* JTCInformationInputViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01AE257119244AD60019AE2A /* JTCInformationInputViewController.storyboard */; };
+		01EBB708192480EB005F77BA /* JTCInformationInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EBB706192480EB005F77BA /* JTCInformationInputViewController.m */; };
+		01EBB709192480EB005F77BA /* JTCInformationInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EBB706192480EB005F77BA /* JTCInformationInputViewController.m */; };
+		01EBB70A192480EB005F77BA /* JTCInformationInputViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01EBB707192480EB005F77BA /* JTCInformationInputViewController.storyboard */; };
+		01EBB70B192480EB005F77BA /* JTCInformationInputViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01EBB707192480EB005F77BA /* JTCInformationInputViewController.storyboard */; };
 		86456AD3B98342E492FF6D40 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60FE3A36BBE6439A9EE4709B /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -59,9 +61,9 @@
 		018635B5192449A9000E2176 /* ExampleJTCInformationInputTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExampleJTCInformationInputTests-Info.plist"; sourceTree = "<group>"; };
 		018635B7192449A9000E2176 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		018635B9192449A9000E2176 /* ExampleJTCInformationInputTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleJTCInformationInputTests.m; sourceTree = "<group>"; };
-		01AE256F19244AD60019AE2A /* JTCInformationInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCInformationInputViewController.h; sourceTree = "<group>"; };
-		01AE257019244AD60019AE2A /* JTCInformationInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCInformationInputViewController.m; sourceTree = "<group>"; };
-		01AE257119244AD60019AE2A /* JTCInformationInputViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JTCInformationInputViewController.storyboard; sourceTree = "<group>"; };
+		01EBB705192480EB005F77BA /* JTCInformationInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCInformationInputViewController.h; sourceTree = "<group>"; };
+		01EBB706192480EB005F77BA /* JTCInformationInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCInformationInputViewController.m; sourceTree = "<group>"; };
+		01EBB707192480EB005F77BA /* JTCInformationInputViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JTCInformationInputViewController.storyboard; sourceTree = "<group>"; };
 		60FE3A36BBE6439A9EE4709B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		633D1E99E426470AA5A83ACC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,7 +96,7 @@
 		0186357F192449A8000E2176 = {
 			isa = PBXGroup;
 			children = (
-				01AE256E19244AD60019AE2A /* lib */,
+				01EBB704192480EB005F77BA /* lib */,
 				01863591192449A8000E2176 /* ExampleJTCInformationInput */,
 				018635B3192449A9000E2176 /* ExampleJTCInformationInputTests */,
 				0186358A192449A8000E2176 /* Frameworks */,
@@ -169,14 +171,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		01AE256E19244AD60019AE2A /* lib */ = {
+		01EBB704192480EB005F77BA /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				01AE256F19244AD60019AE2A /* JTCInformationInputViewController.h */,
-				01AE257019244AD60019AE2A /* JTCInformationInputViewController.m */,
-				01AE257119244AD60019AE2A /* JTCInformationInputViewController.storyboard */,
+				01EBB705192480EB005F77BA /* JTCInformationInputViewController.h */,
+				01EBB706192480EB005F77BA /* JTCInformationInputViewController.m */,
+				01EBB707192480EB005F77BA /* JTCInformationInputViewController.storyboard */,
 			);
-			path = lib;
+			name = lib;
+			path = ../../lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				018635A7192449A9000E2176 /* Images.xcassets in Resources */,
-				01AE257319244AD60019AE2A /* JTCInformationInputViewController.storyboard in Resources */,
+				01EBB70A192480EB005F77BA /* JTCInformationInputViewController.storyboard in Resources */,
 				01863596192449A8000E2176 /* InfoPlist.strings in Resources */,
 				0186359F192449A8000E2176 /* Main.storyboard in Resources */,
 			);
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				018635B8192449A9000E2176 /* InfoPlist.strings in Resources */,
+				01EBB70B192480EB005F77BA /* JTCInformationInputViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,7 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01AE257219244AD60019AE2A /* JTCInformationInputViewController.m in Sources */,
+				01EBB708192480EB005F77BA /* JTCInformationInputViewController.m in Sources */,
 				0186359C192449A8000E2176 /* AppDelegate.m in Sources */,
 				018635A2192449A8000E2176 /* MasterViewController.m in Sources */,
 				01863598192449A8000E2176 /* main.m in Sources */,
@@ -324,6 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01EBB709192480EB005F77BA /* JTCInformationInputViewController.m in Sources */,
 				018635BA192449A9000E2176 /* ExampleJTCInformationInputTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
