@@ -135,6 +135,6 @@ Pod::Spec.new do |s|
   s.dependency 'BlocksKit', '~> 2.2'
   s.dependency 'SVProgressHUD', '~> 1.0'
   s.dependency 'SECoreTextView', '~> 0.8'
-  s.dependency 'JTCCommon', :git => 'https://github.com/tomohisa/JTCCommon.git'
+  s.dependency 'JTCCommon', '~> 0.1.0'
 
 end
