@@ -133,7 +133,7 @@ Pod::Spec.new do |s|
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   s.dependency 'libextobjc', '~> 0.4'
   s.dependency 'BlocksKit', '~> 2.2'
-  s.dependency 'SVProgressHUD', :head
+  s.dependency 'SVProgressHUD', '~> 1.0'
   s.dependency 'SECoreTextView', '~> 0.8'
   s.dependency 'JTCCommon', :git => 'https://github.com/tomohisa/JTCCommon.git'
 
