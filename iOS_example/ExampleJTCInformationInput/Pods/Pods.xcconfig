@@ -1,0 +1,5 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/BlocksKit" "${PODS_ROOT}/Headers/JTCCommon" "${PODS_ROOT}/Headers/SECoreTextView" "${PODS_ROOT}/Headers/SVProgressHUD" "${PODS_ROOT}/Headers/libextobjc"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers" -isystem "${PODS_ROOT}/Headers/BlocksKit" -isystem "${PODS_ROOT}/Headers/JTCCommon" -isystem "${PODS_ROOT}/Headers/SECoreTextView" -isystem "${PODS_ROOT}/Headers/SVProgressHUD" -isystem "${PODS_ROOT}/Headers/libextobjc"
+OTHER_LDFLAGS = -ObjC -framework CoreText -framework MessageUI -framework QuartzCore
+PODS_ROOT = ${SRCROOT}/Pods

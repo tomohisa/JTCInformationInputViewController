@@ -1,0 +1,7 @@
+platform :ios, '7.0'
+
+pod 'libextobjc', '~> 0.4'
+pod 'BlocksKit', '~> 2.2'
+pod 'SVProgressHUD', :head
+pod 'SECoreTextView', '~> 0.8'
+pod 'JTCCommon', :git => 'https://github.com/tomohisa/JTCCommon.git'

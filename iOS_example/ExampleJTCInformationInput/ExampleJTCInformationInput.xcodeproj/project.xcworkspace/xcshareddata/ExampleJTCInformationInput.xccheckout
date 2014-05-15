@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A3A17707-39D0-447A-9A85-3665B4ABBF6D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ExampleJTCInformationInput</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5EC64759-4763-4128-BA21-5BA0D515B8B5</key>
+		<string>https://github.com/tomohisa/JTCInformationInputViewController.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iOS_example/ExampleJTCInformationInput/ExampleJTCInformationInput.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5EC64759-4763-4128-BA21-5BA0D515B8B5</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/tomohisa/JTCInformationInputViewController.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5EC64759-4763-4128-BA21-5BA0D515B8B5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5EC64759-4763-4128-BA21-5BA0D515B8B5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>JTCInformationInputViewController</string>
+		</dict>
+	</array>
+</dict>
+</plist>
