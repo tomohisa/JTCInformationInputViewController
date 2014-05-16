@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "JTCInformationInputViewController"
-  s.version      = "0.1.0"
+  s.version      = “0.1.1”
   s.summary      = "ViewController to input text and return to view"
 
   s.description  = <<-DESC
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/tomohisa/JTCInformationInputViewController.git", :tag => "v0.1.0" }
+  s.source       = { :git => "https://github.com/tomohisa/JTCInformationInputViewController.git", :tag => "v0.1.1” }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

@@ -164,15 +164,19 @@
         vc.allowEnter = NO;
     } copy];
 }
-
++(JTCInformationInputViewAdditionalformat) commonFreeTextFormatter {
+    return [^ (JTCInformationInputViewController*vc, SETextView* textView) {
+        textView.autocapitalizationType = UITextAutocapitalizationTypeSentences;
+        textView.autocorrectionType = UITextAutocorrectionTypeDefault;
+        textView.keyboardType = UIKeyboardTypeDefault;
+        vc.keyboardType = UIKeyboardTypeDefault;
+        vc.allowEnter = YES;
+    } copy];
+}
 #pragma mark - UITextViewDelegate
 - (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text{
-	
-    if ([text isEqualToString:@"\n"]) {
+	if ((!self.allowEnter) && [text containsString:@"\n"]) {
         [self actionDone:self];
-        return NO;
-    }
-    if ((!self.allowEnter) && [text containsString:@"\n"]) {
         return NO;
     }
 	return YES;
@@ -221,6 +225,9 @@
     JTCInformationInputViewblockValidate validator = self.validators[index];
     @weakify(_validatorChaignBlock);
     validator(self_weak_,data,_validatorChaignBlock_weak_);
+}
++(JTCInformationInputViewController *)createController {
+    return [[UIStoryboard storyboardWithName:NSStringFromClass([JTCInformationInputViewController class]) bundle:nil] instantiateInitialViewController];
 }
 
 @end

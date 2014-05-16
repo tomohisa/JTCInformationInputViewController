@@ -33,4 +33,6 @@ typedef void (^JTCInformationInputViewblockValidate)(JTCInformationInputViewCont
 +(JTCInformationInputViewAdditionalformat) commonPhoneNumberTextFormatter;
 +(JTCInformationInputViewAdditionalformat) commonNameTextFormatter;
 +(JTCInformationInputViewAdditionalformat) commonNameJPPhoneticTextFormatter;
++(JTCInformationInputViewAdditionalformat) commonFreeTextFormatter;
++(JTCInformationInputViewController*)createController;
 @end

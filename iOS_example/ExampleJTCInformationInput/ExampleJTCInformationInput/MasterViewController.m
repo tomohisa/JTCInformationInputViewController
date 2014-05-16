@@ -9,10 +9,11 @@
 #import "MasterViewController.h"
 
 #import "DetailViewController.h"
+#import "JTCInformationInputViewController.h"
+#import <extobjc.h>
 
-@interface MasterViewController () {
-    NSMutableArray *_objects;
-}
+@interface MasterViewController ()
+@property NSMutableArray *objects;
 @end
 
 @implementation MasterViewController
@@ -27,9 +28,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
-
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-    self.navigationItem.rightBarButtonItem = addButton;
+    _objects = @[@"",@"",@"",@"",@""].mutableCopy;
 }
 
 - (void)didReceiveMemoryWarning
@@ -57,15 +56,13 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return _objects.count;
+    return 5;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-
-    NSDate *object = _objects[indexPath.row];
-    cell.textLabel.text = [object description];
+    cell.textLabel.text = _objects[indexPath.row];
     return cell;
 }
 
@@ -83,6 +80,22 @@
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
     }
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    @weakify(self);
+    if (indexPath.row==0) {
+        JTCInformationInputViewController * controller = [JTCInformationInputViewController createController];
+        controller.originalText = _objects[0];
+        controller.viewFormatter = [JTCInformationInputViewController commonFreeTextFormatter];
+        controller.completed = ^(BOOL result, NSString* str) {
+            self_weak_.objects[indexPath.row] = str;
+            [self_weak_.tableView reloadData];
+        };
+        [self.navigationController pushViewController:controller animated:YES];
+    }
+    
+    
 }
 
 /*
